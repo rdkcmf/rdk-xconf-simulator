@@ -16,7 +16,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
 */
-package com.comcast.apps.xconf;
+package com.comcast.apps.xconf.imageUpgrade;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -43,8 +43,8 @@ import org.codehaus.jettison.json.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.comcast.apps.xconf.constant.XconfConstant;
-import com.comcast.apps.xconf.dao.XConfiguration;
+import com.comcast.apps.xconf.imageUpgrade.constant.XconfConstant;
+import com.comcast.apps.xconf.imageUpgrade.dao.XConfiguration;
 
 /**
  * 

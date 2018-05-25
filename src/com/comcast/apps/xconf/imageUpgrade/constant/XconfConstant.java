@@ -16,11 +16,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
 */
-package com.comcast.apps.xconf.constant;
+package com.comcast.apps.xconf.imageUpgrade.constant;
 
 import java.util.concurrent.ConcurrentHashMap;
 
-import com.comcast.apps.xconf.dao.XConfiguration;
+import com.comcast.apps.xconf.imageUpgrade.dao.XConfiguration;
 
 /**
  * @author smariy003c
