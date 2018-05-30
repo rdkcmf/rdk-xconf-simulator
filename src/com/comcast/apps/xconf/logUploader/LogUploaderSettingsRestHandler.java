@@ -44,9 +44,9 @@ import org.codehaus.jettison.json.JSONArray;
 import org.codehaus.jettison.json.JSONException;
 import org.codehaus.jettison.json.JSONObject;
 
-import com.comcast.apps.logupload.settings.DcmSettings;
-import com.comcast.apps.logupload.settings.LogSettings;
-import com.comcast.apps.logupload.settings.TelemetrySettings;
+import com.comcast.apps.xconf.logUploader.settings.DcmSettings;
+import com.comcast.apps.xconf.logUploader.settings.LogSettings;
+import com.comcast.apps.xconf.logUploader.settings.TelemetrySettings;
 import com.sun.jersey.api.client.Client;
 import com.sun.jersey.api.client.ClientResponse;
 import com.sun.jersey.api.client.WebResource;

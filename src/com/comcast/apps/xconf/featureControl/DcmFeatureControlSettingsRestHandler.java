@@ -39,8 +39,8 @@ import org.codehaus.jettison.json.JSONArray;
 import org.codehaus.jettison.json.JSONException;
 import org.codehaus.jettison.json.JSONObject;
 
-import com.comcast.apps.dcmFeature.settings.DcmFeatureControlSettings;
-import com.comcast.apps.dcmFeature.settings.DcmFeatureSettings;
+import com.comcast.apps.xconf.featureControl.settings.DcmFeatureControlSettings;
+import com.comcast.apps.xconf.featureControl.settings.DcmFeatureSettings;
 import com.sun.jersey.api.client.Client;
 import com.sun.jersey.api.client.ClientResponse;
 import com.sun.jersey.api.client.WebResource;
