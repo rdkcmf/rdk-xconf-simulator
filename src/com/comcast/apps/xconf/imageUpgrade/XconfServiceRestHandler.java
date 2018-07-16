@@ -271,6 +271,35 @@ public class XconfServiceRestHandler {
 					additionalFirmwareInfo = stbUpgradeConfig
 							.getString(XconfConstant.JSON_KEY_ADDITIONAL_FIRMWARE_VERSION_INFO);
 
+
+				} else {
+				    /*
+					 * Force all devices to Latest PDRI version, to avoid
+					 * further CDL failure.
+					 */
+					if (deviceModel.toLowerCase().contains("pxd01ani")) {
+						additionalFirmwareInfo = "PXD01ANI_PDRI_0.26.1-signed.bin";
+					} else if (deviceModel.toLowerCase().contains("px051aei")) {
+						additionalFirmwareInfo = "PX051AEI_PDRI_0.26-signed.bin";
+					} else if (deviceModel.toLowerCase().contains("px032ani")) {
+						additionalFirmwareInfo = "PX032ANI_PDRI_1.7.1-signed.bin";
+					} else if (deviceModel.toLowerCase().contains("px013an")) {
+						additionalFirmwareInfo = "PX013AN_PDRI_1.162.4.9-signed.bin";
+					} else if (deviceModel.toLowerCase().contains("sx022an")) {
+						additionalFirmwareInfo = "XG2v2_production_V0.32.pdri.bin";
+					} else if (deviceModel.toLowerCase().contains("ax013an")) {
+						additionalFirmwareInfo = "AX013AN_PDRI_4.5.bin";
+					} else if (deviceModel.toLowerCase().contains("cs011an")) {
+						additionalFirmwareInfo = "CS011AN_PDRI_203.27.03.154.bin";
+					} else if (deviceModel.toLowerCase().contains("px022an")) {
+						additionalFirmwareInfo = "PX022AN_PDRI_1.122.6.15.bin";
+					} else if (deviceModel.toLowerCase().contains("cxd01ani")) {
+						additionalFirmwareInfo = "CXD01ANI_PDRI_213.30.4.79.bin";
+					} else if (deviceModel.toLowerCase().contains("ax061aei")) {
+						additionalFirmwareInfo = "AX061AEI_PDRI_0.3.bin";
+					} else if (deviceModel.toLowerCase().contains("tx061aei")) {
+						additionalFirmwareInfo = "TX061AEI_PDRI_213.45.1.41.bin";
+					}
 				}
 				if (isValidString(additionalFirmwareInfo)) {
 					formattedFirewareConfig.put(XconfConstant.JSON_KEY_ADDITIONAL_FIRMWARE_VERSION_INFO,
